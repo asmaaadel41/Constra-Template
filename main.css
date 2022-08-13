@@ -1,0 +1,809 @@
+/*background color */
+.orange {
+  background-color: #ffb600;
+}
+*,
+html {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 87.5%;
+}
+.top-bar {
+  background-color: #ebebeb;
+  padding: 4px 0;
+}
+.top-bar .left-info,
+.top-bar .left-info p,
+.top-bar .right-info {
+  margin: 0;
+}
+.top-bar .left-info {
+  font-size: 1.2em;
+}
+.top-bar .left-info .marker {
+  margin: 5px 5px 5px 0;
+}
+.top-bar .left-info p {
+  font-size: 0.9em;
+}
+.top-bar .left-info .map,
+.top-bar .left-info p {
+  color: #555555;
+}
+.top-bar .right-info li {
+  margin-right: 25px;
+}
+
+.top-bar .right-info li i {
+  color: #333333;
+}
+/*------------------------------------------*/
+.bottom-bar {
+  background-color: white;
+  max-height: 1000px;
+}
+.bottom-bar .navbar {
+  padding: 15px 0 0 10px;
+  max-height: 1000px;
+}
+.bottom-bar .navbar-collapse {
+  margin-left: 155px;
+}
+.bottom-bar .navbar .navbar-brand img {
+  max-width: 150px;
+}
+
+.bottom-bar .nav-item {
+  margin: 7px;
+}
+.bottom-bar .navbar-collapse .navbar-nav .nav-link {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding-bottom: 35px;
+}
+
+.bottom-bar .navbar-collapse .navbar-nav .nav-link .nav-btn {
+  padding: 10px;
+  background-color: #ffb600;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.1em;
+  min-width: 150px;
+}
+.bottom-bar .navbar-collapse .navbar-nav .nav-link .nav-btn:hover {
+  background-color: black;
+  color: #ffb600;
+  transition: all ease-in-out 0.5s;
+}
+.bottom-bar .navbar-collapse .nav-item .dropdown-toggle::after {
+  display: none;
+}
+.bottom-bar .navbar-nav .dropdown-menu {
+  border: none;
+  border-top: 2px solid #ffb600;
+  border-radius: 0;
+}
+.dropdown-menu {
+  min-width: 185px;
+  display: none;
+  margin: 0 !important;
+  padding: 5px;
+}
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+  }
+}
+
+.bottom-bar .dropdown-menu li {
+  padding: 7px 10px;
+}
+
+.bottom-bar .dropdown-menu a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #555555;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 5px 0 15px;
+}
+.bottom-bar .dropdown-menu a:hover {
+  background-color: white;
+  color: #ffb600;
+}
+.bottom-bar .dropdown-menu .active {
+  background-color: white;
+  color: #ffb600;
+}
+
+.dropdown:hover .subdrop-menue {
+  display: none;
+}
+.sub-dropdown .subdrop-menue {
+  display: block;
+  cursor: pointer;
+  z-index: 100;
+  top: -15px;
+  left: 150px;
+}
+.sub-dropdown:hover .subdrop-menue {
+  display: block;
+  cursor: pointer;
+  z-index: 100;
+}
+.sub-dropdown .subdrop {
+  text-decoration: none;
+  border-bottom: none !important;
+}
+.sub-dropdown .drop-arrow {
+  transform: rotate(-90deg);
+}
+.bottom-bar .dropdown-menu a:last-child {
+  border: none;
+}
+@media (max-width: 500px) {
+  .top-bar {
+    padding: 4px 4px 10px;
+  }
+  .bottom-bar .navbar {
+    padding: 20px 10px;
+  }
+  .bottom-bar .navbar-collapse {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .navbar-light .navbar-toggler {
+    outline: none;
+    border: none;
+    background-color: #ffb600;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .navbar-toggler-icon {
+    width: 20px;
+    height: 30px;
+  }
+  .bottom-bar .navbar-collapse .navbar-nav .nav-link {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bottom-bar .dropdown-toggle .fa-angle-down {
+    width: 27px;
+    height: 27px;
+    background-color: black;
+    color: white;
+    padding: 9px;
+  }
+  .dropdown:focus .dropdown-menu {
+    display: block;
+  }
+  .bottom-bar .navbar-collapse .navbar-nav .nav-link {
+    padding-bottom: 5px;
+  }
+}
+/*------------------------End Navbar-----------------------------------*/
+
+/*------------------------Start Header----------------------------------*/
+
+.slider {
+  position: relative;
+}
+.carousel-inner .carousel-caption {
+  position: absolute;
+  width: 600px;
+  height: 235px;
+  top: 185px;
+  left: 115px;
+  opacity: 0.8;
+  text-align: start;
+  padding: 25px;
+  opacity: 0.8;
+  background-color: #272d33;
+  color: white !important;
+}
+
+/* .overlay {  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: #272d33;
+  padding: 25px;
+}  */
+.carousel-caption h6 {
+  font-size: 1.3em;
+  font-weight: normal;
+}
+.carousel-caption h1 {
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 2.6em;
+}
+.carousel-caption p {
+  font-size: 1.1em;
+}
+.carousel-caption button {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  border-radius: 3px;
+  width: 115px;
+  height: 40px;
+  margin-left: 5px;
+}
+.carousel-caption button:hover {
+  background-color: black;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 90px;
+  display: none;
+}
+@media (min-width: 992px) {
+  .slider:hover .carousel-control-next {
+    display: block;
+    width: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .slider:hover .carousel-control-prev {
+    display: block;
+    width: 50px;
+  }
+}
+.carousel-prev-icon,
+.carousel-next-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #272d33;
+  padding: 13px;
+  opacity: 0.7;
+}
+.carousel-prev-icon i,
+.carousel-next-icon i {
+  font-size: 1.5em;
+}
+.carousel-prev-icon:hover,
+.carousel-next-icon:hover {
+  background-color: #ffb600;
+  transition: all ease-in-out 0.4s;
+}
+
+/*-------------------End Header------------------------------*/
+
+/*-------------------Start Request-----------------------------*/
+
+.request {
+  padding: 25px 0;
+  background-color: #272d33;
+}
+
+.request h4 {
+  color: white;
+  font-size: 1.3em;
+  padding: 10px 0;
+  font-weight: bold;
+  margin: 0;
+}
+.request button,
+.projects button,
+.recent-projects button {
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 3px;
+  margin: 0;
+  transition: all ease-in-out 0.4s;
+}
+.request button:hover,
+.projects button:hover,
+.recent-projects button:hover {
+  background-color: black;
+}
+
+/*-------------------End Request------------------------------*/
+
+/*---------------------- Start Section Cards -------------------*/
+
+.services,
+.recent-projects {
+  padding: 60px 0;
+}
+
+.services .card,
+.recent-projects .card {
+  border: none;
+  border-radius: 0;
+}
+.services .card .card-img-top,
+.recent-projects .card .card-img-top {
+  margin-bottom: 25px;
+}
+.services .card-body,
+.specialist .card-body {
+  padding: 0;
+  gap: 25px;
+}
+.services .card-body .card-info h5,
+.specialist .card-body .card-info h5,
+.recent-projects .card-body .card-info h5 {
+  padding: 0 5px;
+}
+.services .card-body .card-info h5 a,
+.specialist .card-body .card-info h5 a,
+.recent-projects .card-body .card-info h5 a {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #323232;
+  text-decoration: none;
+}
+.services .card-body .card-info a:hover,
+.specialist .card-body .card-info a:hover,
+.recent-projects .card-body .card-info a:hover {
+  color: #ffb600;
+  transition: all ease-in-out 0.2s;
+}
+.services .card-body .card-info p,
+.specialist .card-body .card-info p {
+  color: #555555;
+  font-size: 1.1em;
+  padding: 10px 5px 0;
+  margin-bottom: 25px;
+}
+.services .card-body .card-info .learn {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 1em;
+}
+.services .card-body .card-info .learn i {
+  transform: rotate(90deg);
+  margin-right: 3px;
+}
+
+/*------------------------End Section Cards --------------------*/
+
+/*------------------------Start Statistics Section--------------*/
+.Statistics {
+  background-color: #252525;
+  padding: 70px 0;
+  color: #e5e5e5;
+}
+
+.Statistics .counter {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  margin: 15px 0 5px;
+}
+.Statistics .text {
+  font-size: 1.1em;
+  color: #ffb600;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .Statistics .box {
+    margin-bottom: 50px;
+  }
+}
+
+/*---------------End Statistics Section---------------*/
+
+/*-----------------Start specialist Section---------------*/
+
+.specialist {
+  padding: 70px 0;
+}
+.specialist h6,
+.projects h6,
+.recent-projects h6 {
+  color: #555;
+  font-size: 1.3em;
+}
+.specialist h2,
+.projects h2,
+.recent-projects h2 {
+  font-size: 2.5em;
+  margin: 5px 0 50px;
+  font-weight: 900;
+}
+.specialist .card-body {
+  margin-bottom: 30px;
+}
+.specialist .img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  .specialist {
+    padding: 70px 10px;
+  }
+  .specialist h2 {
+    margin-bottom: 70px;
+  }
+  .specialist img {
+    margin-bottom: 50px;
+  }
+}
+
+/*-----------------End specialist Section---------------*/
+
+/*------------------------------- Start Projects Section----------------*/
+.projects {
+  padding: 70px 0;
+  background-color: #f9f9f9;
+}
+.projects .nav-tabs .nav {
+  border-bottom: 3px solid #ffb600;
+  margin: 0 15px;
+}
+.projects .nav-tabs .nav-pills .nav-link {
+  background: none;
+  color: #252525;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 0;
+  padding: 13px 27px;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+}
+.projects .nav-tabs .nav-pills .nav-link.active {
+  background-color: #ffb600;
+}
+.projects .nav-tabs .tab-content {
+  margin-top: 50px;
+}
+.projects .nav-tabs .tab-content .pro-img {
+  padding: 0;
+}
+.projects .nav-tabs .tab-content img {
+  max-width: 100%;
+  height: auto;
+}
+.projects button,
+.recent-projects button {
+  margin-top: 50px;
+  font-size: 1.1em;
+}
+/*------------------------------ End Projects Section--------------------*/
+
+/*--------------------------------Start Client Section-------------------*/
+.clients {
+  padding: 70px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.clients .testimonials h2,
+.clients .happy-client h2 {
+  color: #212121;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.clients .carousel-inner {
+  overflow: visible;
+}
+.clients .carousel-inner .carousel-caption {
+  background-color: white;
+  color: #030303 !important;
+  position: unset;
+  width: 567px;
+  height: 235px;
+  padding: 0;
+}
+
+.clients .carousel-indicators {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.clients .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: #999999;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  margin-top: 35px;
+  margin-right: 15px;
+}
+.clients .carousel-indicators .active {
+  background-color: #ffb600;
+}
+.clients .slider i {
+  color: #ffb600;
+  font-size: 2.5em;
+  margin-right: 27px;
+  font-style: italic;
+}
+.clients .slider .quote {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #555;
+  font-family: "open sans";
+  padding-right: 60px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.clients .slider img {
+  border-radius: 10px;
+  width: 80px;
+  margin-right: 20px;
+}
+.clients .slider h5 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #ffb600;
+}
+.clients .slider span {
+  color: #555555;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+@media (max-width: 500px) {
+  .clients .carousel-inner .carousel-caption {
+    top: 0;
+    left: 0;
+    display: unset !important;
+  }
+}
+.clients .happy-client img {
+  max-width: 100%;
+}
+.clients .happy-client .card {
+  filter: grayscale(100%);
+  padding: 0 30px;
+  min-height: 100px;
+  border-radius: 0;
+  min-width: 160px;
+}
+.clients .happy-client .row {
+  gap: 30px;
+}
+
+@media (max-width: 500px) {
+  .clients .happy-client .card {
+    min-width: 210px;
+  }
+  .clients .happy-client {
+    margin-top: 100px;
+  }
+}
+
+.qoute-fotter img {
+  max-width: 80px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.qoute-fotter .qoute-info {
+  padding-top: 15px;
+  display: inline-block;
+}
+
+.qoute-info .qoute-author {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 0 0 2px;
+  font-weight: 700;
+  display: block;
+  color: var(--myactive);
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.qoute-info .qoute-subtext {
+  color: #555555;
+}
+
+/*--------------------------------End Client Section-------------------*/
+
+/*--------------------------------Start Help Section-------------------*/
+
+.help {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+}
+.help .left-side {
+  background-color: #ffb600;
+}
+.help .left-side {
+  padding: 20px 10px;
+}
+.help .left-side h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 15px;
+}
+.help .left-side p {
+  color: white;
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.help .right-side {
+  background-color: #212121;
+  padding: 0 70px 0 0;
+}
+.help .right-side h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0%;
+  color: white;
+}
+.help .right-side p {
+  color: white;
+  font-size: 1em;
+  margin: 0;
+}
+.help .right-side input {
+  background: none;
+  border: 1px solid rgb(150, 150, 150);
+  outline: none;
+  width: 100%;
+  padding: 10px;
+}
+.help .right-side input:focus {
+  background-color: white;
+  border-color: #ffb600;
+}
+@media (max-width: 500px) {
+  .help .right-side {
+    padding: 0;
+  }
+  .help .right-side input {
+    margin-bottom: 30px;
+  }
+}
+/*--------------------------------End Help Section-------------------*/
+
+/*--------------------------------Start Recent-Projects Section --------------*/
+.recent-projects {
+  font-family: "Montserrat", sans-serif;
+}
+.recent-projects .card-body {
+  padding: 0;
+}
+.recent-projects .card-body .card-info h5 {
+  padding: 0;
+}
+.recent-projects .card-body .card-info h5 a {
+  font-size: 1em;
+  font-weight: 400;
+}
+.recent-projects .card-body .card-info span {
+  color: #555555;
+}
+.recent-projects span {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*-------------------------------Start Recent-Projects Section ---------------*/
+
+/*-------------------------------Start Contact Us Section --------------------*/
+.contact-us {
+  padding: 70px 0 30px;
+  background-color: #030303;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-us h5 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-us h5 span {
+  color: #ffb600;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.contact-us img {
+  max-width: 180px;
+}
+.contact-us p {
+  margin: 30px 0;
+  color: #999999;
+  font-size: 1.15em;
+}
+.contact-us ul li {
+  margin-right: 30px;
+}
+.contact-us ul li i {
+  color: #999999;
+  font-size: 1.2em;
+}
+.contact-us ul li a {
+  text-decoration: none;
+  color: #999999;
+}
+.contact-us .about {
+  padding-right: 20px;
+}
+.contact-us .hour {
+  padding-left: 30px;
+}
+
+.contact-us .service {
+  padding-left: 70px;
+}
+.contact-us .service ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #151515;
+}
+.contact-us .service ul li i {
+  padding: 0;
+  margin: 0;
+  transform: rotate(-90deg);
+  margin-right: 5px;
+  color: #747474;
+}
+.contact-us .service ul li a {
+  font-size: 1.1em;
+  color: #747474;
+}
+.contact-us .service ul li a:hover {
+  color: #ffb600;
+}
+/**---------------------------- End Contact us section--------------------------/
+
+/*------------------------------ Start Footer Section --------------------------*/
+
+.footer {
+  padding: 25px 0 20px;
+  background-color: #ffb600;
+  color: #030303;
+  font-size: 0.9em;
+  font-family: "Open Sans", sans-serif;
+}
+.footer div {
+  margin-bottom: 5px;
+}
+.footer a {
+  text-decoration: none;
+  color: #030303;
+}
+.footer a:hover {
+  cursor: pointer;
+}
+.footer ul li {
+  margin-right: 15px;
+}
+.footer ul li a:hover {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+@media (max-width: 500px) {
+  .contact-us .hour {
+    margin-top: 40px;
+    padding-left: 10px;
+  }
+  .contact-us .service {
+    padding-left: 10px;
+    margin-top: 40px;
+  }
+}
+/*------------------------------ End Footer Section --------------------------*/
